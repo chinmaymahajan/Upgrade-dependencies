@@ -1,0 +1,16 @@
+{
+ "name": "upgrade-utility",
+ "description": "",
+ "version": "1.0.0",
+ "dependencies": {
+  "minimist": "1.2.0",
+  "shelljs": "0.8.1",
+  "yarn-outdated-formatter": "2.0.0"
+ },
+ "scripts": {
+  "build": "webpack"
+ },
+ "main": "upgrade-utility.js",
+ "author": "Chinmay",
+ "license": "ISC"
+}
