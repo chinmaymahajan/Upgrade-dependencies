@@ -7,20 +7,12 @@ let exclude = argv.exclude;
 let type = argv.type;
 let npm = argv.npm;
 let category = argv.category;
-let repositoryPath = argv.repositoryPath
+// let repositoryPath = argv.repositoryPath
 
 /* package tp execute shell scripts and manipulate file */
 const shell = require('shelljs');
 const fs = require('fs');
 const upgradeUtilityPath = __dirname;
-
-try {
-	process.chdir(repositoryPath);
-}
-catch (err) {
-	console.error(`chdir: ${err}`);
-}
-
 
 /* Commands */
 const upgradePackagesCommand = 'yarn upgrade';
