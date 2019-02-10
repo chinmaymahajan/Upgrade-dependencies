@@ -326,6 +326,5 @@ const upgradeDependenciesWrapper = () => {
 			upgradeDependencies(packagesToUpgrade);
 		}
 	}
-};
 
-upgradeDependenciesWrapper();
+module.exports = upgradeDependenciesWrapper;

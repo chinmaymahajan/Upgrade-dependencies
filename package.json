@@ -1,16 +1,28 @@
 {
- "name": "upgrade-utility",
- "description": "",
+ "name": "upgrade-dependencies",
+ "description": "This utility is for upgrading dependencies in node project, dependencies can be upgraded in deffirent ways, it supports yarn and npm",
  "version": "1.0.0",
+ "main": "upgrade-utility.js",
+ "keywords": [
+  "upgrade-dependencies",
+  "yarn-outdated",
+  "npm-outdated",
+  "yarn-upgraade",
+  "npm-install",
+  "upgrade",
+  "dependencies"
+ ],
+ "author": "Chinmay Mahajan <chinmaypmahajan@gmail.com >",
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/chinmaymahajan/Upgrade-dependencies.git"
+ },
+ "homepage": "https://github.com/chinmaymahajan/Upgrade-dependencies",
+ "license": "ISC",
  "dependencies": {
   "minimist": "1.2.0",
-  "shelljs": "0.8.1",
+  "publish": "^0.6.0",
+  "shelljs": "0.8.3",
   "yarn-outdated-formatter": "2.0.0"
- },
- "scripts": {
-  "build": "webpack"
- },
- "main": "upgrade-utility.js",
- "author": "Chinmay",
- "license": "ISC"
+ }
 }
