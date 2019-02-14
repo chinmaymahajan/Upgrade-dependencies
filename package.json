@@ -1,7 +1,7 @@
 {
  "name": "upgrade-dependencies",
  "description": "This utility is for upgrading dependencies in node project, dependencies can be upgraded in deffirent ways, it supports yarn and npm",
- "version": "1.0.0",
+ "version": "1.0.1",
  "main": "upgrade-utility.js",
  "keywords": [
   "upgrade-dependencies",
