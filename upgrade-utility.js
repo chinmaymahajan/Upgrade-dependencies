@@ -7,7 +7,6 @@ let exclude = argv.exclude;
 let type = argv.type;
 let npm = argv.npm;
 let category = argv.category;
-// let repositoryPath = argv.repositoryPath
 
 /* package tp execute shell scripts and manipulate file */
 const shell = require('shelljs');
@@ -233,12 +232,13 @@ const writeFile = (packages, version) => {
 
 /* Update Report in file */
 const generateReport = () => {
+	let fileDataFormatted = "Packages " + " | " + "Version";
+		for (let i = 0; i < fileData.packages.length; i++) {
+				fileDataFormatted += "\n" + fileData.packages[i] + " => " + fileData.version[i]
+		}
+	console.log(fileDataFormatted);
 
-	for (let i = 0; i < fileData.packages.length; i++)
-		console.log(fileData.packages[i], ' => ' , fileData.version[i]);
-
-	fileData = JSON.stringify(fileData);
-	fs.writeFile('upgradeReport.txt', fileData, err => {
+	fs.writeFile('upgradeReport.txt', fileDataFormatted, err => {
 		if (err) throw err;
 	});
 };
@@ -326,5 +326,5 @@ const upgradeDependenciesWrapper = () => {
 			upgradeDependencies(packagesToUpgrade);
 		}
 	}
-
+}
 module.exports = upgradeDependenciesWrapper;
