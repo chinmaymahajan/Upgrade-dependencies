@@ -1,6 +1,8 @@
 # Upgrade-dependencies
 > A command line utility for easily upgrading the outdated npm dependencies in your [Node.js](https://nodejs.org/en/) project.
 
+**Get it from npm registry [upgrade-dependencies](https://www.npmjs.com/package/upgrade-dependencies)**
+
 #### Supported yarn and npm node package manager 
 
 ## Features
